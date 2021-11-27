@@ -4,7 +4,7 @@
 :root {
     --background-color: #8B5CF6;
     --search-box: #C4B5FD;
-    --search-icon: #8B5CF6;
+    --search-icon: #C4B5FD;
 }
 
 /*}*/
@@ -41,7 +41,7 @@ button {
     height: 46px;
     color: white;
     width: 46px;
-    background: var(--search-icon);
+    background: var(--background-color);
     outline: none;
     cursor: pointer;
     transition: 0.2s ease-in-out;
