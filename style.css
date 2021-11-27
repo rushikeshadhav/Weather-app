@@ -1,18 +1,25 @@
 /*p {*/
 /*    font-size: 18px;*/
+
+:root {
+    --background-color: #8B5CF6;
+    --search-box: #C4B5FD;
+    --search-icon: #8B5CF6;
+}
+
 /*}*/
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #222;
+    background-color: var(--search-box);
     font-family: 'Open Sans', sans-serif;
     background-image: url('https://source.unsplash.com/1600x900/?nature,water');
 }
 
 .card {
-    background: #000000d0;
+    background: var(--background-color);
     padding: 1.8em;
     border-radius: 32px;
     color: white;
@@ -22,7 +29,7 @@ body {
     margin: 2em;
 }
 button:hover {
-	background: #7c7c6b;
+	background: var(--search-icon);
 }
 
 button {
@@ -34,7 +41,7 @@ button {
     height: 46px;
     color: white;
     width: 46px;
-    background: #7c7c7c2b;
+    background: var(--search-icon);
     outline: none;
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -47,11 +54,11 @@ input.search {
 input.search-box {
 	border-radius: 24px;
 	border: none;
-	color: white;
+	color: black;
 	font-family: inherit;
 	font-size: 120%;
-	background: #7c7c7c2b;
-	outline-color: none;
+	background: var(--search-box);
+	outline-color: var(--background-color);
 	padding: 0.5em 1em;
 }
 
@@ -83,3 +90,4 @@ h1.temp {
     color: white;
     position: absolute;
 }
+
